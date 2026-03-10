@@ -1,0 +1,232 @@
+/* Interests Gallery Page Styles */
+
+.page-header {
+  padding: var(--spacing-4xl) 0 var(--spacing-2xl);
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    var(--color-surface-elevated),
+    var(--color-background)
+  );
+  margin-top: 61px;
+}
+
+.page-header h1 {
+  margin-bottom: var(--spacing-md);
+}
+
+.page-header p {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Gallery Grid */
+.gallery-section {
+  padding: var(--spacing-3xl) 0;
+}
+
+.gallery-filters {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  margin-bottom: var(--spacing-2xl);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+/* Interest Card */
+.interest-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  position: relative;
+}
+
+.interest-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-xl);
+}
+
+.interest-card-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+  background: linear-gradient(
+    135deg,
+    var(--color-surface-elevated),
+    var(--color-primary-light)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-primary);
+}
+
+.interest-card:hover .interest-card-image {
+  transform: scale(1.1);
+}
+
+.interest-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(45, 27, 30, 0.9),
+    rgba(45, 27, 30, 0.5),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--spacing-xl);
+  color: white;
+}
+
+.interest-card:hover .interest-card-overlay {
+  opacity: 1;
+}
+
+.interest-card-body {
+  padding: var(--spacing-lg);
+}
+
+.interest-tag {
+  display: inline-block;
+  background-color: var(--color-primary-light);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-xs);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--spacing-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.interest-card-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
+}
+
+.interest-card-description {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: 0;
+}
+
+/* Modal Large Image Gallery */
+.modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.modal-gallery-item {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+  background: linear-gradient(
+    135deg,
+    var(--color-surface-elevated),
+    var(--color-primary-light)
+  );
+}
+
+.modal-gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.modal-description {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-lg);
+}
+
+/* Masonry Layout (Alternative) */
+.gallery-grid.masonry {
+  column-count: 3;
+  column-gap: var(--spacing-xl);
+}
+
+.gallery-grid.masonry .interest-card {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+  }
+  
+  .gallery-grid.masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: var(--spacing-3xl) 0 var(--spacing-xl);
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .gallery-grid.masonry {
+    column-count: 1;
+  }
+  
+  .interest-card-image {
+    height: 220px;
+  }
+  
+  .modal-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}

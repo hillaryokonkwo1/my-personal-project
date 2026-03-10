@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Follow my travel adventures around the world - from bustling cities to serene landscapes.">
+  <title>My Travel Adventures - Personal Website</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/pages/travel.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">✨ My Space</a>
+      
+      <ul class="navbar-nav">
+        <li><a href="../index.html" class="nav-link">About</a></li>
+        <li><a href="interests.html" class="nav-link">Interests</a></li>
+        <li><a href="travel.html" class="nav-link active">Travel</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-toggle-icon">🌙</span>
+          </button>
+        </li>
+      </ul>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+        <span class="menu-icon">☰</span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Travel Intro -->
+  <section class="travel-intro">
+    <div class="container">
+      <h1 class="fade-in">My Travel Adventures 🌍</h1>
+      <p class="fade-in">
+        Exploring the world one country at a time. Each destination has left its mark on my heart and taught me something new about life, culture, and myself.
+      </p>
+      
+      <div class="travel-stats fade-in">
+        <div class="travel-stat">
+          <span class="stat-number" data-count="12">0</span>
+          <span class="stat-label">Countries Visited</span>
+        </div>
+        <div class="travel-stat">
+          <span class="stat-number" data-count="32">0</span>
+          <span class="stat-label">Cities Explored</span>
+        </div>
+        <div class="travel-stat">
+          <span class="stat-number" data-count="4">0</span>
+          <span class="stat-label">Continents</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Countries Section -->
+  <section class="countries-section">
+    <div class="container">
+      <div class="countries-grid" data-stagger>
+        
+        <!-- Country Card 1: Japan -->
+        <div class="country-card">
+          <div class="country-card-header">
+            <div class="country-flag">🇦🇪</div>
+            <div class="country-header-overlay">
+              <h3 class="country-name">Dubai</h3>
+            </div>
+          </div>
+          <div class="country-card-body">
+            <p class="country-summary">
+              A dazzling city of superlatives where luxury meets tradition, featuring the world's tallest buildings, golden beaches, and endless shopping.
+            </p>
+            <div class="country-meta">
+              <span class="meta-item"><span class="meta-icon">📅</span> Summer 2025</span>
+              <span class="meta-item"><span class="meta-icon">⏱️</span> 8 Days</span>
+            </div>
+            <button class="expand-btn">📖 Read More</button>
+          </div>
+          
+          <div class="country-details">
+            <div class="country-content">
+              <div class="country-gallery">
+                <div class="country-gallery-item">�️</div>
+                <div class="country-gallery-item">🏖️</div>
+                <div class="country-gallery-item">🛍️</div>
+                <div class="country-gallery-item">🌆</div>
+                <div class="country-gallery-item">🏜️</div>
+              </div>
+              
+              <div class="country-blog">
+                <h3>My Dubai Journey</h3>
+                <div class="blog-post">
+                  <p class="blog-date">📅 August 2025</p>
+                  <div class="blog-content">
+                    <p>
+                      Dubai exceeded every expectation I had. From the moment I stepped off the plane, I was immersed in a city that honors both tradition and innovation. The bustling streets, with their modern architecture and endless energy, contrasted beautifully with the serene desert landscapes.
+                    </p>
+                    <p>
+                      The towering skyscrapers, luxurious shopping malls, and vibrant nightlife showcased the city's modernity, while the historic souks, traditional dhow boats, and cultural festivals highlighted its rich heritage. I explored the iconic Burj Khalifa, wandered through the enchanting Al Fahidi Historic District, and experienced the thrill of a desert safari.
+                    </p>
+                    <p>
+                      The highlight of my trip was experiencing the desert safari. Dune bashing across golden sands, riding camels at sunset, and enjoying a traditional BBQ dinner under the stars while watching belly dancing performances was unforgettable. The hospitality and warmth of the Emirati people made every moment special.
+                    </p>
+                    <p>
+                      Dubai taught me that innovation and tradition can coexist beautifully. From the futuristic architecture to the preserved heritage sites, every experience was remarkable. I left with amazing memories, countless photos, and a deep appreciation for this extraordinary city. I can't wait to return!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Country Card 2: United States -->
+        <div class="country-card">
+          <div class="country-card-header">
+            <div class="country-flag">🇺🇸</div>
+            <div class="country-header-overlay">
+              <h3 class="country-name">United States</h3>
+            </div>
+          </div>
+          <div class="country-card-body">
+            <p class="country-summary">
+              The city that never sleeps, New York offers world-class theater, iconic landmarks, and endless exploration.
+            </p>
+            <div class="country-meta">
+              <span class="meta-item"><span class="meta-icon">📅</span> Spring 2025</span>
+              <span class="meta-item"><span class="meta-icon">⏱️</span> 7 days</span>
+            </div>
+            <button class="expand-btn">📖 Read More</button>
+          </div>
+          
+          <div class="country-details">
+            <div class="country-content">
+              <div class="country-gallery">
+                <div class="country-gallery-item">🗽</div>
+                <div class="country-gallery-item">🎭</div>
+                <div class="country-gallery-item">🍎</div>
+                <div class="country-gallery-item">🏙️</div>
+              </div>
+              
+              <div class="country-blog">
+                <h3>The Magic of New York City</h3>
+                <div class="blog-post">
+                  <p class="blog-date">📅 Spring 2025</p>
+                  <div class="blog-content">
+                    <p>
+                      New York City exceeded every expectation! From the moment I arrived, the energy was electric. I started with the classic tourist activities—visiting the Statue of Liberty and Ellis Island, walking across the Brooklyn Bridge at sunset, and taking in the breathtaking views from the Top of the Rock. Times Square at night was overwhelming in the best way, with its dazzling lights and buzzing crowds.
+                    </p>
+                    <p>
+                      The highlight of my trip was experiencing Broadway! I saw two incredible shows—a musical that had me singing for days and a powerful drama that moved me to tears. There's something magical about sitting in those historic theaters, feeling the energy of live performance. I also explored the Museum of Modern Art and the Metropolitan Museum of Art, getting lost in their vast collections for hours.
+                    </p>
+                    <p>
+                      Beyond the famous landmarks, I loved discovering the city's neighborhoods—the charm of Greenwich Village, the vibrant energy of SoHo, and the diverse food scene everywhere I turned. From grabbing a New York-style pizza slice to dining at rooftop restaurants with skyline views, every meal was an experience. New York truly is the city where dreams are made, and I can't wait to return!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Country Card 3: Morocco -->
+        <div class="country-card">
+          <div class="country-card-header">
+            <div class="country-flag">🇲🇦</div>
+            <div class="country-header-overlay">
+              <h3 class="country-name">Morocco</h3>
+            </div>
+          </div>
+          <div class="country-card-body">
+            <p class="country-summary">
+              A sensory feast of vibrant markets, stunning architecture, and warm Saharan sunsets.
+            </p>
+            <div class="country-meta">
+              <span class="meta-item"><span class="meta-icon">📅</span> Fall 2022</span>
+              <span class="meta-item"><span class="meta-icon">⏱️</span> 8 days</span>
+            </div>
+            <button class="expand-btn">📖 Read More</button>
+          </div>
+          
+          <div class="country-details">
+            <div class="country-content">
+              <div class="country-gallery">
+                <div class="country-gallery-item">🕌</div>
+                <div class="country-gallery-item">🐪</div>
+                <div class="country-gallery-item">🏜️</div>
+                <div class="country-gallery-item">🫖</div>
+              </div>
+              
+              <div class="country-blog">
+                <h3>Moroccan Magic</h3>
+                <div class="blog-post">
+                  <p class="blog-date">📅 January 2024</p>
+                  <div class="blog-content">
+                    <p>
+                      Morocco awakened all my senses. The bustling souks of Marrakech with their spices, textiles, and endless treasures were an adventure in themselves. Getting lost in the medina's labyrinth became my favorite pastime—every turn revealed a new wonder, from ornate doors to hidden riads.
+                    </p>
+                    <p>
+                      The highlight was spending a night in the Sahara Desert. Riding camels at sunset, watching the dunes change color, and sleeping under a blanket of stars was humbling and magical. The silence of the desert was profound, broken only by the wind and the crackling of the campfire as we shared mint tea with Berber guides.
+                    </p>
+                    <p>
+                      In Chefchaouen, the blue city nestled in the Rif Mountains, I found peace. The blue-washed buildings created a dreamlike atmosphere perfect for photography and reflection. Morocco showed me the beauty of contrasts—ancient and modern, desert and mountains, chaos and serenity. It was a journey I'll treasure forever.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Country Card 4: France -->
+        <div class="country-card">
+          <div class="country-card-header">
+            <div class="country-flag">🇫🇷</div>
+            <div class="country-header-overlay">
+              <h3 class="country-name">France</h3>
+            </div>
+          </div>
+          <div class="country-card-body">
+            <p class="country-summary">
+              The City of Light, where romance, art, and world-class cuisine create an unforgettable experience.
+            </p>
+            <div class="country-meta">
+              <span class="meta-item"><span class="meta-icon">📅</span> Spring 2024</span>
+              <span class="meta-item"><span class="meta-icon">⏱️</span> 6 days</span>
+            </div>
+            <button class="expand-btn">📖 Read More</button>
+          </div>
+          
+          <div class="country-details">
+            <div class="country-content">
+              <div class="country-gallery">
+                <div class="country-gallery-item">🗼</div>
+                <div class="country-gallery-item">🥐</div>
+                <div class="country-gallery-item">☕</div>
+                <div class="country-gallery-item">🎨</div>
+              </div>
+              
+              <div class="country-blog">
+                <h3>Falling in Love with Paris</h3>
+                <div class="blog-post">
+                  <p class="blog-date">📅 May 2024</p>
+                  <div class="blog-content">
+                    <p>
+                      Paris stole my heart from the moment I arrived. The city exudes romance and elegance at every corner—from the charming cobblestone streets of Montmartre to the grand boulevards lined with cafés. I spent my first morning climbing to the top of the Eiffel Tower at sunrise, watching the city wake up beneath me, and it was absolutely magical.
+                    </p>
+                    <p>
+                      Art and culture are woven into Paris's DNA. I lost myself wandering through the Louvre for hours, standing before the Mona Lisa and Venus de Milo. The Musée d'Orsay's impressionist collection took my breath away. But beyond the famous museums, I loved discovering hidden galleries in Le Marais and watching street artists create masterpieces along the Seine.
+                    </p>
+                    <p>
+                      The food was a revelation! Fresh croissants and café au lait for breakfast, afternoon wine and cheese in Luxembourg Gardens, and unforgettable dinners in cozy bistros. I strolled along the Champs-Élysées, explored the bohemian vibe of Saint-Germain-des-Prés, and watched the Eiffel Tower sparkle at night. Paris taught me to slow down, savor every moment, and embrace the art of living beautifully. C'est magnifique!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Full-screen Image Viewer -->
+  <div class="image-viewer" id="imageViewer">
+    <button class="viewer-close" aria-label="Close image viewer">&times;</button>
+    <img src="" alt="Gallery image" class="viewer-image" id="viewerImage">
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-link" aria-label="Email">✉️</a>
+      </div>
+      <p class="footer-text">
+        © 2026 Hillary Okonkwo. Made with 💖 and creativity.
+      </p>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="../js/nav.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/travel.js"></script>
+</body>
+</html>

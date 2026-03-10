@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore my diverse interests and hobbies - from photography to cooking and everything in between.">
+  <title>My Interests - Personal Website</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/pages/interests.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand">✨ My Space</a>
+      
+      <ul class="navbar-nav">
+        <li><a href="../index.html" class="nav-link">About</a></li>
+        <li><a href="interests.html" class="nav-link active">Interests</a></li>
+        <li><a href="travel.html" class="nav-link">Travel</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-toggle-icon">🌙</span>
+          </button>
+        </li>
+      </ul>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+        <span class="menu-icon">☰</span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="fade-in">My Interests & Hobbies</h1>
+      <p class="fade-in">
+        Discover the things I'm passionate about and how I spend my free time. Click on any card to learn more!
+      </p>
+    </div>
+  </header>
+  
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      
+      <!-- Filter Buttons -->
+      <div class="gallery-filters fade-in">
+        <button class="filter-btn active" data-filter="all">All Interests</button>
+        <button class="filter-btn" data-filter="creative">Creative</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="learning">Learning</button>
+      </div>
+      
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" data-stagger>
+        
+        <!-- Interest Card 1: Photography -->
+        <div class="interest-card" 
+             data-category="creative" 
+             data-title="Photography"
+             data-description="I love capturing moments through my lens. From stunning landscapes to candid portraits, photography helps me see the world differently. My favorite subjects include nature, architecture, and street photography. Each photo tells a story, freezes a memory, and allows me to express my creative vision.">
+          <div class="interest-card-image">📸</div>
+          <div class="interest-card-body">
+            <span class="interest-tag">Creative</span>
+            <h3 class="interest-card-title">Photography</h3>
+            <p class="interest-card-description">
+              Capturing life's beautiful moments through the lens, one shot at a time.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Interest Card 2: Cooking -->
+        <div class="interest-card" 
+             data-category="creative" 
+             data-title="Cooking & Baking"
+             data-description="The kitchen is my creative playground. I enjoy experimenting with flavors from different cuisines and recreating dishes from my travels. Whether it's perfecting a recipe or improvising with what's in the fridge, cooking brings me joy and allows me to share love through food.">
+          <div class="interest-card-image">🍳</div>
+          <div class="interest-card-body">
+            <span class="interest-tag">Creative</span>
+            <h3 class="interest-card-title">Cooking & Baking</h3>
+            <p class="interest-card-description">
+              Exploring flavors and creating delicious experiences in the kitchen.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Interest Card 3: Hiking -->
+        <div class="interest-card" 
+             data-category="active" 
+             data-title="Hiking & Nature"
+             data-description="There's nothing quite like the peace I find on a mountain trail. Hiking allows me to disconnect from the digital world and reconnect with nature. From challenging summit climbs to peaceful forest walks, every hike is an adventure. I'm always planning my next outdoor escape.">
+          <div class="interest-card-image">🥾</div>
+          <div class="interest-card-body">
+            <span class="interest-tag">Active</span>
+            <h3 class="interest-card-title">Hiking & Nature</h3>
+            <p class="interest-card-description">
+              Finding peace and adventure on trails, one step at a time.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Interest Card 4: Reading -->
+        <div class="interest-card" 
+             data-category="learning" 
+             data-title="Reading & Literature"
+             data-description="Books are windows to different worlds and perspectives.  Reading expands my mind, fuels my creativity, and provides endless inspiration. Currently reading: 'Eat, Pray, Love' by Elizabeth Gilbert.">
+          <div class="interest-card-image">📚</div>
+          <div class="interest-card-body">
+            <span class="interest-tag">Learning</span>
+            <h3 class="interest-card-title">Reading & Literature</h3>
+            <p class="interest-card-description">
+              Getting lost in stories and expanding my worldview through books.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Interest Card 5: Music -->
+        <div class="interest-card" 
+             data-category="creative" 
+             data-title="Music & Playing Instruments"
+             data-description="Music is the soundtrack to my life. I play the guitar and love discovering new artists and genres. Music brings color to my days.">
+          <div class="interest-card-image">🎵</div>
+          <div class="interest-card-body">
+            <span class="interest-tag">Creative</span>
+            <h3 class="interest-card-title">Music & Instruments</h3>
+            <p class="interest-card-description">
+              Creating and enjoying melodies that speak to the soul.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Interest Card 6: Fitness -->
+        <div class="interest-card" 
+             data-category="active" 
+             data-title="Fitness & Yoga"
+             data-description="Staying active is essential for my physical and mental well-being. My fitness routine includes running, strength training, cycling. I believe in balanced movement that makes me feel strong and energized. Fitness isn't just about physical health—it's about building discipline, confidence, and resilience.">
+          <div class="interest-card-image">💪</div>
+          <div class="interest-card-body">
+            <span class="interest-tag">Active</span>
+            <h3 class="interest-card-title">Fitness & Yoga</h3>
+            <p class="interest-card-description">
+              Building strength, flexibility, and mindfulness through movement.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Interest Card 7: Art & Design -->
+        <div class="interest-card" 
+             data-category="creative" 
+             data-title="Art & Design"
+             data-description="I express myself through various forms of visual art including painting, digital design, sketching, and calligraphy. Art allows me to process emotions, experiment with ideas, and create beauty. I'm constantly inspired by nature, architecture, and other artists, and I love exploring new techniques and mediums.">
+          <div class="interest-card-image">🎨</div>
+          <div class="interest-card-body">
+            <span class="interest-tag">Creative</span>
+            <h3 class="interest-card-title">Art & Design</h3>
+            <p class="interest-card-description">
+              Expressing creativity through colors, shapes, and visual storytelling.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Interest Card 8: Learning Languages -->
+        <div class="interest-card" 
+             data-category="learning" 
+             data-title="Learning Languages"
+             data-description="Language learning opens doors to new cultures and connections. I'm currently learning French and find joy in being able to communicate across cultures. Each new word or phrase feels like unlocking a secret code. Languages help me travel more meaningfully and understand the world from different perspectives.">
+          <div class="interest-card-image">🗣️</div>
+          <div class="interest-card-body">
+            <span class="interest-tag">Learning</span>
+            <h3 class="interest-card-title">Learning Languages</h3>
+            <p class="interest-card-description">
+              Connecting across cultures by learning new ways to communicate.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal for Interest Details -->
+  <div class="modal" id="interestModal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Interest Title</h2>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Content will be dynamically inserted by JavaScript -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-link" aria-label="Email">✉️</a>
+      </div>
+      <p class="footer-text">
+        © 2026 Hillary Okonkwo. Made with 💖 and creativity.
+      </p>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="../js/nav.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/gallery.js"></script>
+</body>
+</html>

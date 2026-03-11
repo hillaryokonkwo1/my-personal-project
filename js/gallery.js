@@ -2,32 +2,32 @@
 
 // Image gallery mapping for each interest
 const interestImages = {
-  'Photography': [
-    '../static/photography/image1.jpg',
-    '../static/photography/image2.jpg'
+  Photography: [
+    "../static/photography/image1.jpg",
+    "../static/photography/image2.jpg",
   ],
-  'Cooking & Baking': [
-    '../static/cooking/cooking1.jpg',
-    '../static/cooking/cooking2.jpg'
+  "Cooking & Baking": [
+    "../static/cooking/cooking1.jpg",
+    "../static/cooking/cooking2.jpg",
   ],
-  'Hiking & Nature': [
-    '../static/hiking/hiking1.jpg',
-    '../static/hiking/hiking2.jpg'
+  "Hiking & Nature": [
+    "../static/hiking/hiking1.jpg",
+    "../static/hiking/hiking2.jpg",
   ],
-  'Reading & Literature': [
-    '../static/reading/reading1.jpg',
-    '../static/reading/reading2.jpg'
+  "Reading & Literature": [
+    "../static/reading/reading1.jpg",
+    "../static/reading/reading2.jpg",
   ],
-  'Music & Playing Instruments': [
-    '../static/music/music1.jpg',
-    '../static/music/music2.jpg'
+  "Music & Playing Instruments": [
+    "../static/music/music1.jpg",
+    "../static/music/music2.jpg",
   ],
-  'Fitness & Yoga': [
-    '../static/fitness/fitness1.jpg',
-    '../static/fitness/fitness2.jpg'
+  "Fitness & Yoga": [
+    "../static/fitness/fitness1.jpg",
+    "../static/fitness/fitness2.jpg",
   ],
-  'Art & Design': [],
-  'Learning Languages': []
+  "Art & Design": ["../static/art/art1.jpg", "../static/art/art2.jpg"],
+  "Learning Languages": ["../static/languages/language.jpg"],
 };
 
 document.addEventListener('DOMContentLoaded', () => {
